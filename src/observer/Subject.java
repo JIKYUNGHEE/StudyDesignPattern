@@ -1,7 +1,7 @@
 package observer;
 
 public interface Subject {
-    void attachObserver(Observer observer);
-    void detachObserver(Observer observer);
+    void registerObserver(Observer observer);
+    void removeObserver(Observer observer);
     void notifyObserver();
 }
